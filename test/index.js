@@ -36,6 +36,7 @@ describe('cursor', function() {
       assert.ifError(err)
       assert.equal(res.length, 3)
       cursor.end(done)
+      done()
     })
   })
 
